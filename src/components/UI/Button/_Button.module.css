@@ -1,0 +1,31 @@
+button {
+    padding: 10px 20px;
+    font-size: .8rem;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid rgb(190, 150, 254);
+    color: rgb(190, 150, 254);
+    transition: .4s;
+    cursor: pointer;
+    &:hover {
+        transition: .4s;
+        color: white;
+        background-color: rgb(190, 150, 254);
+    }
+    &:focus {
+        animation: focus .4s;
+    }
+}
+
+@keyframes focus {
+    0% {
+
+    }
+    50% {
+        box-shadow: 0 0 0 3px rgba(190, 150, 254, 0.6),
+                    0 0 0 6px rgba(190, 150, 254, 0.3);
+    }
+    100% {
+
+    }
+}

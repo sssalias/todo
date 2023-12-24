@@ -1,0 +1,24 @@
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 15px 10px;
+    /* border-radius: 5px; */
+    font-size: 1rem;
+    /* border: 1px solid lightgray; */
+    border: none;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+    transition: .4s;
+    &:focus {
+        transition: .4s;
+        background-color: rgb(245, 245, 245);
+    }
+}
